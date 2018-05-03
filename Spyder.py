@@ -26,7 +26,7 @@ def spider(max_pages):
 
         for link in soup.find_all('span', {'class':'_342BXW_'}):
             data = link.text
-            data = data.strip('£')
+            data = data.strip('Â£')
             price.append(float(data))
 
         page = page +1
